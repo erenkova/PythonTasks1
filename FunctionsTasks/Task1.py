@@ -7,3 +7,15 @@
 «Готово! Заберите бейджики.»
 Функция должна принимать имя и группу ученика.
 """
+def print_label(name, group):
+    print("Колледж Сириус")
+    print("Имя:", name)
+    print("Группа:", group)
+
+print("Печать бейджиков")
+amount=int(input("Число учеников: "))
+for i in range(amount):
+    name = input("Имя ученика:")
+    group = input("Группа ученика:")
+    print_label(name, group)
+print("Готово! Заберите бейджики.")
