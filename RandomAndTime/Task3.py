@@ -6,3 +6,16 @@
 1) «Ваш номер: _».
 2) «Участников в первом забеге: _», «Участников во втором забеге: _».
 """
+from random import randint
+
+r1people = 0
+r2people = 0
+while input("Выдать номер забега - Enter, (off - стоп)? ") != 'off':
+    num = randint(1, 2)
+    if num == 1:
+        r1people += 1
+    else:
+        r2people += 1
+    print("Ваш номер: " + str(num))
+    print("Участников в первом забеге: " + str(r1people))
+    print("Участников во втором забеге: " + str(r2people))
