@@ -10,4 +10,3 @@ for i in login:
             print('ошибка')
         except:
             print('логин добавлен в базу')
-print("я выучил исключения")
