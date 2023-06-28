@@ -1,0 +1,5 @@
+number=input()
+b=number.count(" (")
+c=number.count(") ")
+d=number.count("-")
+print((number.replace(" (", "", b)) and (number.replace(") ", "", c)) and (number.replace("-", "", d)), sep="")
