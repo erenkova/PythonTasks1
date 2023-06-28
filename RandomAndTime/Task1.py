@@ -5,3 +5,11 @@
 Если 30 минут закончились или игрок вводит «off» — завершать работу.
 Оформить в виде функции.
 """
+from time import time
+
+start = time()
+gambit=input("off - завершить")
+while gambit!="off":
+    end=time()
+    print(end-start, 1800-end+start)
+    gambit = input("off - завершить")
