@@ -7,3 +7,15 @@
 
 Выдачу допуска реализуй как функцию.
 """
+def print_allow(points):
+    points = int(input("Введите количество баллов"))
+    if points>50:
+        print("True")
+    else:
+        print("Вы отчислены")
+
+
+n=int(input("Число учеников:"))
+points = int(input("Введите количество баллов"))
+for i in range(n):
+    print_allow(points)
